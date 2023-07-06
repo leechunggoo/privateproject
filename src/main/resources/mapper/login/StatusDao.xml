@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+<mapper namespace="nos.status.dao.StatusDao">
+
+    <insert id="insertreportdata"  parameterType="map">
+		INSERT INTO mcrm.reportdata
+		( id
+		 ,rptdata
+		)
+		VALUES( 
+		  #{id}
+		 ,to_json(#{rptdata}::json)
+		)
+       	
+    </insert>
+	
+	<delete id="deleteReportData"  parameterType="String">
+		delete from mcrm.reportdata where id = #{id}
+    </delete>
+	
+	<insert id="shippingtimepdfinsert" parameterType="map">
+		INSERT INTO mcrm.reportdata
+		(	
+			userid,
+			id,
+			rptdata
+		)
+		VALUES
+		(	
+			#{userid},
+			#{id},
+			to_json(#{rptdata}::json)
+		)
+	
+	</insert>
+	
+	<delete id="shippingtimepdfdelete" parameterType="String">
+		delete from mcrm.reportdata where userid = #{userid}
+	</delete>
+	
+	
+</mapper>
+
+-->
