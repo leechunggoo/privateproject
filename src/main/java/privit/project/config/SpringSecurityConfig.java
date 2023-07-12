@@ -18,12 +18,20 @@ public class SpringSecurityConfig {
                     +"script-src 'self' *.datatable.net *.highcharts.com; "
                     +"object-src none;"
                     +"base-uri 'none';")))
-                .build();*/
-        return http.headers(headers->headers.contentSecurityPolicy(policy -> policy.policyDirectives(""
+                .build();
+        return http.csrf().disable().
+                headers(headers->headers.contentSecurityPolicy(policy -> policy.policyDirectives(""
 //                +"script-src 'self' *.datatable.net*.highcharts.com*; "
                 +"object-src none;"
                 +"base-uri 'none';"))).build();
-
+            */
+        return http.csrf().
+                csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                .and()
+                .headers(headers->headers.contentSecurityPolicy(policy -> policy.policyDirectives(""
+                +"script-src 'self' *.datatable.net , *.highcharts.com;"
+                +"object-src none;"
+                +"base-uri 'none';"))).build();
     }
 
 
