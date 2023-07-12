@@ -1,3 +1,4 @@
+/*
 (async () => {
     const topology = await fetch(
         'https://code.highcharts.com/mapdata/custom/world-continents.topo.json'
@@ -238,3 +239,4 @@
         }]
     });
 })();
+*/
