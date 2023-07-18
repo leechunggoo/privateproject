@@ -17,7 +17,7 @@ public class SecurityConfig {
         http.csrf().disable().cors().disable()
                 .authorizeHttpRequests(request->
                         request.dispatcherTypeMatchers(DispatcherType.FORWARD).permitAll()
-                                .requestMatchers("/login/join").permitAll()
+                                .requestMatchers("/login/join").permitAll() // security 인증 제외 url등록
                                 .anyRequest().authenticated()
                 ).formLogin(
                         login -> login
