@@ -1,3 +1,4 @@
+console.log('main page')
 /*
 (async () => {
     const topology = await fetch(

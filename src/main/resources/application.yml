@@ -4,3 +4,21 @@ server:
   servlet:
     context-path: /pri
 
+logging:
+  level:
+    root: info
+
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+
+#    spring.datasource.driver-class-name=net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#    spring.datasource.url=jdbc:log4jdbc:postgresql://10.11.16.171:5432/hssnopdev
+#    spring.datasource.username=hs_user
+#    spring.datasource.password=hs_user86
+
