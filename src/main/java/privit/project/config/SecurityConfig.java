@@ -18,6 +18,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(request->
                         request.dispatcherTypeMatchers(DispatcherType.FORWARD).permitAll()
                                 .requestMatchers("/login/join").permitAll() // security 인증 제외 url등록
+                                .requestMatchers("js/**", "css/**", "lib/**", "sso/**").permitAll()
                                 .anyRequest().authenticated()
                 ).formLogin(
                         login -> login
@@ -30,8 +31,6 @@ public class SecurityConfig {
                 ).logout(Customizer.withDefaults());
         return http.build();
     }
-
-
 
 }
 

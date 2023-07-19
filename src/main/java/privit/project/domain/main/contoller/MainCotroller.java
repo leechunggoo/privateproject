@@ -2,8 +2,6 @@ package privit.project.domain.main.contoller;
 
 
 import lombok.RequiredArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +15,7 @@ public class MainCotroller {
     @GetMapping(value = "/")
     public String index(Model model){
         System.out.println("111111");
-        return "/login/abcde";
+        return "/login/user-login";
     }
 
     //로그인 submit 받을 url
@@ -29,11 +27,11 @@ public class MainCotroller {
     }
 
     //회원가입 페이지
-    @PostMapping(value="/login/join")
+/*    @PostMapping(value="/login/join")
     public String login_join(){
         System.out.println("회원가입");
         return "/login/join";
-    }
+    }*/
 
     
 

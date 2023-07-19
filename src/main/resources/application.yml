@@ -15,6 +15,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
+  thymeleaf:
+    cache: false
+
+
 
 
 #    spring.datasource.driver-class-name=net.sf.log4jdbc.sql.jdbcapi.DriverSpy

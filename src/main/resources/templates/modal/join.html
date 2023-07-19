@@ -1,0 +1,70 @@
+<div class='modal fade' id='myInfoEditModal' tabindex='-1' aria-hidden='true' data-backdrop='static'>
+  <div class='modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md'>
+    <div class='modal-content'>
+      <form method='post'>
+        <button type='button' class='btn btn-close' data-dismiss='modal' aria-label='Close'></button>
+        <div class='modal-header'>
+          <h3 class='s-tit'>나의 정보</h3>
+        </div>
+        <div class='modal-body ptb0'>
+          <div class='group'>
+            <div class='control plr0'>
+              <div class='form-row'>
+                <div class='form-group col-50'>
+                  <span class='col-form-label'>사용자ID</span>
+                  <span class='data-txt user-id'></span>
+                  <input class='user-id-input' name='username' hidden>
+                </div>
+                <div class='form-group col-50'>
+                  <span class='col-form-label'>이름</span>
+                  <span class='data-txt username'></span>
+                </div>
+              </div>
+              <div class='form-row'>
+                <div class='form-group col-100'>
+                  <label for='currPassword' class='col-form-label'>현재 비밀번호</label>
+                  <input type='password' class='curr-password form-control' id='currPassword' name='currPassword'>
+                </div>
+              </div>
+              <div class='form-row'>
+                <div class='form-group col-50'>
+                  <label for='newPassword' class='col-form-label'>신규 비밀번호</label>
+                  <input type='password' class='new-password form-control' id='newPassword' name='newPassword'>
+                  <p class='required f-11 mt5 mb0'>8자 이상, 영문 대소문자, 숫자, 특수문자 조합</p>
+                </div>
+                <div class='form-group col-50'>
+                  <label for='validPassword' class='col-form-label'>신규 비밀번호 확인</label>
+                  <input type='password' class='valid-password form-control' id='validPassword' name='validPassword'>
+                </div>
+              </div>
+              <div class='form-row'>
+                <div class='form-group col-50'>
+                  <label for='myTelNumM' class='col-form-label'>전화번호</label>
+                  <input type='text' class='tel form-control' id='myTelNumM' name='telephone'>
+                </div>
+                <div class='form-group col-50'>
+                  <label for='myMobileNumM' class='col-form-label'>휴대폰번호</label>
+                  <input type='text' class='phone form-control' id='myMobileNumM' name='mobilephone'>
+                </div>
+              </div>
+              <div class='form-row'>
+                <div class='form-group col-100'>
+                  <label for='myEmailAdrM' class='col-form-label'>이메일</label>
+                  <input type='text' class='email form-control' id='myEmailAdrM' name='email'>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <div class='btn-group btn-block'>
+            <button type='button' class='btn btn-secondary btn-sm' data-dismiss='modal'>닫기</button>
+            <button class='btn btn-primary btn-sm'>저장</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--<script src='/lts/js/modal/my-info-modal.js'></script>-->
