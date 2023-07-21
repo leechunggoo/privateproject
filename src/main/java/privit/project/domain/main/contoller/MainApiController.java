@@ -3,12 +3,17 @@ package privit.project.domain.main.contoller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 @RestController
 public class MainApiController {
-    @GetMapping(value = "/Api/main/request")
-    public String api_main_request(Model model){
+    @PostMapping(value = "/api/userinfo/save")
+    public String api_main_request(@RequestParam Map map, Model model){
+        System.out.println("map,map");
+        System.out.println(map);
         return "aaaa";
     }
 

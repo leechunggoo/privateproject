@@ -9,7 +9,7 @@
             usernumber as usernumber,
             name as name,
             phoneno as phoneno,
-            email as email,
+            email as email
             from userinfo
         where userid = #{userid}
     </select>

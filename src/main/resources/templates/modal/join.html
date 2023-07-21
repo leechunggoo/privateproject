@@ -13,17 +13,18 @@
                 <div class='form-group col-50'>
                   <span class='col-form-label'>사용자ID</span>
                   <span class='data-txt user-id'></span>
-                  <input class='user-id-input' name='username' hidden>
+                  <input class='user-id-input' id='userid' name='userid'>
                 </div>
                 <div class='form-group col-50'>
                   <span class='col-form-label'>이름</span>
                   <span class='data-txt username'></span>
+                  <input class='user-id-input' id='username' name='username'>
                 </div>
               </div>
               <div class='form-row'>
                 <div class='form-group col-100'>
                   <label for='currPassword' class='col-form-label'>현재 비밀번호</label>
-                  <input type='password' class='curr-password form-control' id='currPassword' name='currPassword'>
+                  <input type='password' class='curr-password form-control' id='currPassword' name='currPassword' hidden>
                 </div>
               </div>
               <div class='form-row'>
@@ -59,7 +60,7 @@
         <div class='modal-footer'>
           <div class='btn-group btn-block'>
             <button type='button' class='btn btn-secondary btn-sm' data-dismiss='modal'>닫기</button>
-            <button class='btn btn-primary btn-sm'>저장</button>
+            <button class='btn btn-primary btn-sm' id="savebtn">저장</button>
           </div>
         </div>
       </form>
@@ -67,4 +68,4 @@
   </div>
 </div>
 
-<!--<script src='/lts/js/modal/my-info-modal.js'></script>-->
+<script src='/pri/js/modal/join.js'></script>

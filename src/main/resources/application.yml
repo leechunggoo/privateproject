@@ -7,6 +7,8 @@ server:
 logging:
   level:
     root: info
+    jdbc: off
+    sql only: info
 
 
 spring:
@@ -17,6 +19,22 @@ spring:
     password: postgres
   thymeleaf:
     cache: false
+
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
+  type-aliases-package: privit.project
+
+
+
+#    mybatis.mapper-locations=classpath:/mapper/**/*.xml
+#    mybatis.type-aliases-package=hyosung.lts
+
+#logging:
+ # level:
+  #  jdbc: off
+   #   sqlonly: info
+#logging.level.jdbc.sqlonly=info
+
 
 
 

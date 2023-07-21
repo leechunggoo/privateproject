@@ -10,9 +10,9 @@ import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
-public class LoginDao {
+public class LoginDao{
 
-    private final LoggerSqlSession loggersql;
+    private final LoggerSqlSession loggersql;//requestuser
 
     public Optional<LoginDto> requestuser(String userid) {
         LoginDto logindto = loggersql.selectOne("privit.project.domain.login.dao.LoginDao.findByUsername",userid);
